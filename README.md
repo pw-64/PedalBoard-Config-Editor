@@ -22,9 +22,9 @@ brew install switchaudio-osx
 
 ## How To Use
 1. Use the GUI to configure your pipeline
-1.1. Add outputs
-1.2. Add modifiers to the outputs, if wanted
-1.3. Configure the modifier options, or use the pre-filled defaults
+  - Add outputs
+  - Add modifiers to the outputs, if wanted
+  - Configure the modifier options, or use the pre-filled defaults
 2. Copy-paste the yaml output into config.yml
-3. Set the script's input_device
-4. Run `python3 main.py` to start the pipeline
+3. Set the input_device for the script in main.py
+4. Run `python3 main.py` to start
