@@ -1,0 +1,101 @@
+* {
+  text-align: center;
+  margin: 0;
+  color: black;
+}
+h2 {
+  margin: 10px;
+}
+img {
+  margin: 0;
+  height: 13px;
+  width: 13px;
+}
+button {
+  padding-top: 3px;
+}
+#outer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+#left {
+  border: 1px solid black;
+}
+#left h2 {
+  color: white;
+}
+#left .title {
+  display: flex;
+  background: black;
+  justify-content: space-between;
+}
+#left .content {
+  display: flex;
+  flex-direction: column;
+}
+#left .content div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid black;
+  background: dodgerblue;
+}
+#left .content div.active {
+  background: blue;
+  color: white;
+}
+#left .content div input,
+#left .content div select {
+  border: none;
+  padding: 2px;
+  margin: 4px;
+}
+#left .content div input[type="range"] {
+  width: 130px;
+  margin-left: 0;
+}
+#left #modifier_params > div {
+  justify-content: flex-end;
+  padding-left: 4px;
+}
+#left #modifier_params > div > *:first-child {
+  margin: 0 6px;
+}
+#left #add_modifier,
+#left #reset_all_params {
+  visibility: hidden;
+}
+#left #outputs > div,
+#left #modifiers > div {
+  cursor: pointer;
+}
+#right {
+  display: flex;
+  flex-direction: column;
+}
+#right #config_yml {
+  text-align: left;
+}
+#right #config_yml:focus {
+  outline: none;
+}
+#right #config_copy {
+  background: #EFEFEF;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.4s;
+}
+#right #config_copy.green {
+  background: #34d900;
+}
+footer {
+  margin-top: 120px;
+}
+footer div {
+  display: flex;
+  flex-direction: column;
+}
+/*# sourceMappingURL=styles.css.map */

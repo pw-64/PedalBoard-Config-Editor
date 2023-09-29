@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>PB Editor</title>
+        <link href="styles.css" type="text/css" rel="stylesheet">
+        <script src="jquery.js"></script>
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <h1 style="margin: 10px 0;">PedalBoard Configuration Editor</h1>
+        <div id="outer">
+            <div>
+                <div id="left">
+                    <div class="title">
+                        <span></span>
+                        <h2>Outputs</h2>
+                        <button onclick="AddOutput()">Add</button>
+                    </div>
+                    <div class="content" id="outputs"></div>
+                    <div class="title">
+                        <span></span>
+                        <h2>Modifiers</h2>
+                        <button id="add_modifier">Add</button>
+                    </div>
+                    <div class="content" id="modifiers"></div>
+                    <div class="title">
+                        <span></span>
+                        <h2>Modifier Parameters</h2>
+                        <button id="reset_all_params" onclick="ResetAllModifierParameters()">
+                            <img src="images/reset.svg" alt="reset all parameters to default">
+                        </button>
+                    </div>
+                    <div class="content" id="modifier_params"></div>
+                </div>
+            </div>
+            <div id="right">
+                <h2>config.yml</h2>
+                <label><textarea id="config_yml" oninput="yamlAutoResize(); Generate()"></textarea></label>
+                <button id="config_copy" onclick="CopyConfig()">Copy</button>
+            </div>
+        </div>
+        <footer>
+            <h3>Links</h3>
+            <div>
+                <a href="https://github.com/pw-64">My GitHub</a>
+                <a href="https://github.com/pw-64/PedalBoard-Config-Editor">This Project's Repo</a>
+                <a href="https://github.com/spotify/pedalboard">PedalBoard Repo</a>
+                <a href="https://spotify.github.io/pedalboard/reference/pedalboard.html">PedalBoard Documentation</a>
+                <a href="https://github.com/deweller/switchaudio-osx">SwitchAudio Repo</a>
+            </div>
+        </footer>
+    </body>
+</html>

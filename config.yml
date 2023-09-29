@@ -1,0 +1,10 @@
+External Headphones:
+  Reverb:
+    room_size: 0.3
+  LowShelfFilter:
+    cutoff_frequency_hz: 100
+    gain_db: 3
+
+# MacBook Air Speakers:
+#   LowpassFilter:
+#     cutoff_frequency_hz: 100
