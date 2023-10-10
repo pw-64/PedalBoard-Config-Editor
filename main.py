@@ -31,6 +31,7 @@ for device in data:
             exec_str += f'{modifier_parameter}={data[device][modifier][modifier_parameter]},'
         exec_str += '),'
     exec_str += ']);'
+# print(exec_str)
 exec(exec_str)
 
 original_output = run_sas_command(['-c', '-t', 'output'])  # store which output is currently active

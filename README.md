@@ -16,7 +16,7 @@ Alongside the python script to run PedalBoard from a config file, this repo also
 ```bash
 python3 -m venv env
 source env/bin/activate
-pip install pedalboard
+pip install pedalboard pyyaml
 brew install switchaudio-osx
 ```
 
